@@ -1,0 +1,9 @@
+# File này dùng để gửi request kiểm tra API.
+# Chạy project bằng lệnh: dotnet run
+
+@w1Api_HostAddress = http://localhost:5239
+
+### Kiểm tra API trang chủ
+
+GET {{w1Api_HostAddress}}/
+Accept: text/plain
