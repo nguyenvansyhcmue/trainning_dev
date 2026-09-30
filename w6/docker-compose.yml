@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: w6/Dockerfile
+    container_name: w5-api
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Jwt__Key: w5-demo-secret-key-change-this-in-production-123456
+      Jwt__Issuer: w5-api
+      Jwt__Audience: w5-client
+    restart: unless-stopped

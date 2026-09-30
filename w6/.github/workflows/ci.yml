@@ -1,0 +1,28 @@
+name: w6-ci
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore w5/w5.csproj
+
+      - name: Build
+        run: dotnet build w5/w5.csproj --configuration Release --no-restore
+
+      - name: Build Docker image
+        run: docker build -f w6/Dockerfile -t w5-api:ci .

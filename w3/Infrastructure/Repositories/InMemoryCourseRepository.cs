@@ -1,0 +1,1 @@
+using w3.Domain.Interfaces; using w3.Domain.Models; namespace w3.Infrastructure.Repositories; public class InMemoryCourseRepository : ICourseRepository { private readonly List<Course> _courses = []; public Course? GetById(int id) => _courses.FirstOrDefault(x => x.CourseId == id); public IReadOnlyList<Course> GetAll() => _courses; }
