@@ -1,0 +1,162 @@
+﻿:host {
+  display: block;
+  min-height: 100vh;
+  background: #f4f4f1;
+  color: #151515;
+}
+
+.grades-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 22px 45px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #151515;
+}
+
+.page-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.logout-button {
+  border: 1px solid #151515;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: transparent;
+  color: #151515;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.logout-button:hover {
+  background: #151515;
+  color: #fff;
+}
+
+.heading {
+  padding: 18px 0 30px;
+  border-bottom: 1px solid #151515;
+}
+
+.heading h1 {
+  margin: 0 0 14px;
+  font-size: clamp(42px, 5vw, 58px);
+  letter-spacing: -2.5px;
+  font-weight: 600;
+}
+
+.heading span {
+  color: #777;
+  font-size: 14px;
+}
+
+form {
+  max-width: 700px;
+  padding-top: 30px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 22px;
+  color: #777;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 15px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  color: #151515;
+}
+
+input:focus {
+  border-color: #1655d5;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.save-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-width: 155px;
+  padding: 13px 16px 13px 19px;
+  border: 1px solid #1655d5;
+  border-radius: 999px;
+  background: #1655d5;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+
+.save-button strong {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  color: #1655d5;
+  font-size: 15px;
+}
+
+.save-button:hover {
+  background: #0f43b5;
+  box-shadow: 0 8px 18px #1655d544;
+  transform: translateY(-2px);
+}
+
+.save-button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+.success,
+.error {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.success {
+  color: #16834d;
+}
+
+.error {
+  color: #a21b1b;
+}
+
+@media (max-width: 600px) {
+  .grades-page {
+    padding: 20px;
+  }
+
+  .heading {
+    padding: 18px 0 26px;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+}

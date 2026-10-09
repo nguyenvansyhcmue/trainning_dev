@@ -1,0 +1,38 @@
+{
+  "name": "w8-angular-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve",
+    "dev": "node tools/dev.mjs",
+    "build": "ng build",
+    "test": "ng test",
+    "import:students": "node tools/import-students-watch.mjs",
+    "watch:students": "node tools/import-students-watch.mjs --watch",
+    "report:w8": "node tools/create-week8-report.mjs",
+    "report:sprint": "node tools/create-sprint-documents.mjs"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "@ngrx/effects": "^18.0.0",
+    "@ngrx/store": "^18.0.0",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.3",
+    "xlsx": "^0.18.5",
+    "zone.js": "~0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.0",
+    "@angular/cli": "^18.2.0",
+    "@angular/compiler-cli": "^18.2.0",
+    "docx": "^9.9.0",
+    "typescript": "~5.5.2"
+  }
+}

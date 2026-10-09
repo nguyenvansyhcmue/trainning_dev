@@ -1,0 +1,8 @@
+[
+  { "courseCode": "CS101", "courseName": "Lập trình căn bản", "credits": 3 },
+  { "courseCode": "CS201", "courseName": "Cấu trúc dữ liệu và giải thuật", "credits": 3 },
+  { "courseCode": "SE301", "courseName": "Phát triển phần mềm", "credits": 3 },
+  { "courseCode": "DB202", "courseName": "Cơ sở dữ liệu", "credits": 3 },
+  { "courseCode": "NW204", "courseName": "Mạng máy tính", "credits": 3 },
+  { "courseCode": "AI305", "courseName": "Nhập môn trí tuệ nhân tạo", "credits": 3 }
+]

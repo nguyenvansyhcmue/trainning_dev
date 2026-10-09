@@ -1,0 +1,802 @@
+[
+  {
+    "studentId": "SV001",
+    "fullName": "Nguyễn Đức Toàn",
+    "gender": "Nam",
+    "email": "sv001@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV002",
+    "fullName": "Hoàng Thành Dũng",
+    "gender": "Nam",
+    "email": "sv002@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV003",
+    "fullName": "Phạm Thảo Linh",
+    "gender": "Nữ",
+    "email": "sv003@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV004",
+    "fullName": "Lê Thu Lan",
+    "gender": "Nữ",
+    "email": "sv004@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV005",
+    "fullName": "Vũ Diễm Bình",
+    "gender": "Nữ",
+    "email": "sv005@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV006",
+    "fullName": "Võ Ngọc Nga",
+    "gender": "Nữ",
+    "email": "sv006@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV007",
+    "fullName": "Phan Tuấn Phúc",
+    "gender": "Nam",
+    "email": "sv007@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV008",
+    "fullName": "Phạm Thành Huy",
+    "gender": "Nam",
+    "email": "sv008@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV009",
+    "fullName": "Hoàng Văn Phong",
+    "gender": "Nam",
+    "email": "sv009@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV010",
+    "fullName": "Hoàng Thảo Dung",
+    "gender": "Nữ",
+    "email": "sv010@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV011",
+    "fullName": "Phan Văn Long",
+    "gender": "Nam",
+    "email": "sv011@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV012",
+    "fullName": "Võ Hải Trung",
+    "gender": "Nam",
+    "email": "sv012@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV013",
+    "fullName": "Nguyễn Thị Phương",
+    "gender": "Nữ",
+    "email": "sv013@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV014",
+    "fullName": "Hoàng Mai Hương",
+    "gender": "Nữ",
+    "email": "sv014@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV015",
+    "fullName": "Huỳnh Thành Hùng",
+    "gender": "Nam",
+    "email": "sv015@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV016",
+    "fullName": "Võ Công Quân",
+    "gender": "Nam",
+    "email": "sv016@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV017",
+    "fullName": "Trần Thảo Thủy",
+    "gender": "Nữ",
+    "email": "sv017@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV018",
+    "fullName": "Lê Thu Thảo",
+    "gender": "Nữ",
+    "email": "sv018@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV019",
+    "fullName": "Đặng Mai Linh",
+    "gender": "Nữ",
+    "email": "sv019@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV020",
+    "fullName": "Huỳnh Duy Bảo",
+    "gender": "Nam",
+    "email": "sv020@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV021",
+    "fullName": "Vũ Minh Phong",
+    "gender": "Nam",
+    "email": "sv021@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV022",
+    "fullName": "Phan Thành Trung",
+    "gender": "Nam",
+    "email": "sv022@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV023",
+    "fullName": "Phạm Thành Long",
+    "gender": "Nam",
+    "email": "sv023@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV024",
+    "fullName": "Nguyễn Phương Thủy",
+    "gender": "Nữ",
+    "email": "sv024@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV025",
+    "fullName": "Phạm Công Hùng",
+    "gender": "Nam",
+    "email": "sv025@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV026",
+    "fullName": "Võ Thảo Nhi",
+    "gender": "Nữ",
+    "email": "sv026@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV027",
+    "fullName": "Vũ Phương Đào",
+    "gender": "Nữ",
+    "email": "sv027@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV028",
+    "fullName": "Võ Hồng Thủy",
+    "gender": "Nữ",
+    "email": "sv028@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV029",
+    "fullName": "Huỳnh Duy Dũng",
+    "gender": "Nam",
+    "email": "sv029@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV030",
+    "fullName": "Vũ Văn Tuấn",
+    "gender": "Nam",
+    "email": "sv030@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV031",
+    "fullName": "Đặng Phương An",
+    "gender": "Nữ",
+    "email": "sv031@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV032",
+    "fullName": "Trần Diễm Cúc",
+    "gender": "Nữ",
+    "email": "sv032@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV033",
+    "fullName": "Phan Mai Tâm",
+    "gender": "Nữ",
+    "email": "sv033@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV034",
+    "fullName": "Võ Tuấn Vinh",
+    "gender": "Nam",
+    "email": "sv034@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV035",
+    "fullName": "Phạm Duy Khoa",
+    "gender": "Nam",
+    "email": "sv035@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV036",
+    "fullName": "Phan Mai Quỳnh",
+    "gender": "Nữ",
+    "email": "sv036@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV037",
+    "fullName": "Trần Hồng Nhi",
+    "gender": "Nữ",
+    "email": "sv037@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV038",
+    "fullName": "Vũ Minh Vinh",
+    "gender": "Nam",
+    "email": "sv038@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV039",
+    "fullName": "Phạm Hồng Thủy",
+    "gender": "Nữ",
+    "email": "sv039@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV040",
+    "fullName": "Phan Mai Lan",
+    "gender": "Nữ",
+    "email": "sv040@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV041",
+    "fullName": "Phạm Minh Phúc",
+    "gender": "Nam",
+    "email": "sv041@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV042",
+    "fullName": "Nguyễn Thành Nam",
+    "gender": "Nam",
+    "email": "sv042@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV043",
+    "fullName": "Võ Minh Bảo",
+    "gender": "Nam",
+    "email": "sv043@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV044",
+    "fullName": "Phạm Thu Dung",
+    "gender": "Nữ",
+    "email": "sv044@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV045",
+    "fullName": "Võ Đức Minh",
+    "gender": "Nam",
+    "email": "sv045@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV046",
+    "fullName": "Võ Thị Hương",
+    "gender": "Nữ",
+    "email": "sv046@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV047",
+    "fullName": "Huỳnh Công Khoa",
+    "gender": "Nam",
+    "email": "sv047@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV048",
+    "fullName": "Đặng Thị Nhung",
+    "gender": "Nữ",
+    "email": "sv048@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV049",
+    "fullName": "Võ Văn Trung",
+    "gender": "Nam",
+    "email": "sv049@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV050",
+    "fullName": "Lê Thu Tuyết",
+    "gender": "Nữ",
+    "email": "sv050@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV051",
+    "fullName": "Vũ Diễm Huệ",
+    "gender": "Nữ",
+    "email": "sv051@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV052",
+    "fullName": "Huỳnh Phương Huyền",
+    "gender": "Nữ",
+    "email": "sv052@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV053",
+    "fullName": "Vũ Thu Tâm",
+    "gender": "Nữ",
+    "email": "sv053@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV054",
+    "fullName": "Lê Duy Phong",
+    "gender": "Nam",
+    "email": "sv054@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV055",
+    "fullName": "Phạm Phương Hà",
+    "gender": "Nữ",
+    "email": "sv055@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV056",
+    "fullName": "Đặng Mai Hương",
+    "gender": "Nữ",
+    "email": "sv056@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV057",
+    "fullName": "Huỳnh Văn Tâm",
+    "gender": "Nam",
+    "email": "sv057@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV058",
+    "fullName": "Nguyễn Tuấn Dũng",
+    "gender": "Nam",
+    "email": "sv058@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV059",
+    "fullName": "Nguyễn Thảo Vy",
+    "gender": "Nữ",
+    "email": "sv059@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV060",
+    "fullName": "Lê Tuấn Vinh",
+    "gender": "Nam",
+    "email": "sv060@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV061",
+    "fullName": "Trần Minh Sơn",
+    "gender": "Nam",
+    "email": "sv061@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV062",
+    "fullName": "Vũ Văn Sơn",
+    "gender": "Nam",
+    "email": "sv062@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV063",
+    "fullName": "Vũ Hồng Lan",
+    "gender": "Nữ",
+    "email": "sv063@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV064",
+    "fullName": "Vũ Thu Trang",
+    "gender": "Nữ",
+    "email": "sv064@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV065",
+    "fullName": "Trần Thị Huệ",
+    "gender": "Nữ",
+    "email": "sv065@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV066",
+    "fullName": "Võ Thành Anh",
+    "gender": "Nam",
+    "email": "sv066@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV067",
+    "fullName": "Lê Đức Tú",
+    "gender": "Nam",
+    "email": "sv067@student.edu.vn",
+    "major": "Marketing",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV068",
+    "fullName": "Phạm Hải Anh",
+    "gender": "Nam",
+    "email": "sv068@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV069",
+    "fullName": "Trần Thu Hà",
+    "gender": "Nữ",
+    "email": "sv069@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV070",
+    "fullName": "Trần Phương Hạnh",
+    "gender": "Nữ",
+    "email": "sv070@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV071",
+    "fullName": "Vũ Văn Hùng",
+    "gender": "Nam",
+    "email": "sv071@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV072",
+    "fullName": "Phan Hải Huy",
+    "gender": "Nam",
+    "email": "sv072@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV073",
+    "fullName": "Đặng Mai Tâm",
+    "gender": "Nữ",
+    "email": "sv073@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV074",
+    "fullName": "Võ Duy Tuấn",
+    "gender": "Nam",
+    "email": "sv074@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV075",
+    "fullName": "Võ Đức Dũng",
+    "gender": "Nam",
+    "email": "sv075@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV076",
+    "fullName": "Trần Minh Phúc",
+    "gender": "Nam",
+    "email": "sv076@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV077",
+    "fullName": "Hoàng Thảo Cúc",
+    "gender": "Nữ",
+    "email": "sv077@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV078",
+    "fullName": "Đặng Phương An",
+    "gender": "Nữ",
+    "email": "sv078@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV079",
+    "fullName": "Võ Tuấn Minh",
+    "gender": "Nam",
+    "email": "sv079@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV080",
+    "fullName": "Trần Mai Quỳnh",
+    "gender": "Nữ",
+    "email": "sv080@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV081",
+    "fullName": "Vũ Quỳnh Linh",
+    "gender": "Nữ",
+    "email": "sv081@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV082",
+    "fullName": "Lê Phương Dung",
+    "gender": "Nữ",
+    "email": "sv082@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV083",
+    "fullName": "Vũ Hải Toàn",
+    "gender": "Nam",
+    "email": "sv083@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV084",
+    "fullName": "Phạm Phương Tâm",
+    "gender": "Nữ",
+    "email": "sv084@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV085",
+    "fullName": "Phạm Mai Anh",
+    "gender": "Nữ",
+    "email": "sv085@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV086",
+    "fullName": "Nguyễn Mai Nga",
+    "gender": "Nữ",
+    "email": "sv086@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV087",
+    "fullName": "Huỳnh Diễm Nga",
+    "gender": "Nữ",
+    "email": "sv087@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV088",
+    "fullName": "Phạm Quỳnh Trinh",
+    "gender": "Nữ",
+    "email": "sv088@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV089",
+    "fullName": "Lê Công Tiến",
+    "gender": "Nam",
+    "email": "sv089@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV090",
+    "fullName": "Vũ Hồng Trinh",
+    "gender": "Nữ",
+    "email": "sv090@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV091",
+    "fullName": "Phan Thảo Quỳnh",
+    "gender": "Nữ",
+    "email": "sv091@student.edu.vn",
+    "major": "Business Administration",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV092",
+    "fullName": "Phạm Ngọc Quỳnh",
+    "gender": "Nữ",
+    "email": "sv092@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV093",
+    "fullName": "Phan Đức Hùng",
+    "gender": "Nam",
+    "email": "sv093@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV094",
+    "fullName": "Hoàng Minh Phong",
+    "gender": "Nam",
+    "email": "sv094@student.edu.vn",
+    "major": "Software Engineering",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV095",
+    "fullName": "Nguyễn Thu Oanh",
+    "gender": "Nữ",
+    "email": "sv095@student.edu.vn",
+    "major": "Cybersecurity",
+    "academicYear": 1
+  },
+  {
+    "studentId": "SV096",
+    "fullName": "Võ Ngọc Dung",
+    "gender": "Nữ",
+    "email": "sv096@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 2
+  },
+  {
+    "studentId": "SV097",
+    "fullName": "Đặng Thảo Nga",
+    "gender": "Nữ",
+    "email": "sv097@student.edu.vn",
+    "major": "Information Technology",
+    "academicYear": 3
+  },
+  {
+    "studentId": "SV098",
+    "fullName": "Trần Thảo Yến",
+    "gender": "Nữ",
+    "email": "sv098@student.edu.vn",
+    "major": "Data Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV099",
+    "fullName": "Võ Đức Phúc",
+    "gender": "Nam",
+    "email": "sv099@student.edu.vn",
+    "major": "Computer Science",
+    "academicYear": 4
+  },
+  {
+    "studentId": "SV100",
+    "fullName": "Vũ Thảo Trang",
+    "gender": "Nữ",
+    "email": "sv100@student.edu.vn",
+    "major": "Logistics",
+    "academicYear": 1
+  }
+]

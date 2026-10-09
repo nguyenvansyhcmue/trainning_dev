@@ -1,0 +1,389 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8fafc;
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.8), rgba(248, 250, 252, 0.9)),
+    url('/assets/student-page-background.jpg');
+  background-position: center;
+  background-size: cover;
+  color: #101d34;
+  font-family: Inter, 'Segoe UI', Arial, sans-serif;
+}
+
+:host::before,
+:host::after {
+  position: fixed;
+  z-index: 0;
+  width: 360px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.34);
+  content: '';
+  filter: blur(22px);
+  pointer-events: none;
+}
+
+:host::before {
+  top: 18%;
+  left: -120px;
+  animation: drift-cloud-left 28s ease-in-out infinite alternate;
+}
+
+:host::after {
+  right: -140px;
+  bottom: 20%;
+  animation: drift-cloud-right 34s ease-in-out infinite alternate;
+}
+
+.students-page,
+.page-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.students-page {
+  display: flex;
+  width: min(1200px, calc(100% - 48px));
+  height: 0;
+  min-height: 0;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.page-header {
+  position: relative;
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 1px solid #dfe7f4;
+  border-top: 0;
+  border-bottom-color: #e8edf5;
+  border-radius: 0 0 16px 16px;
+  background: linear-gradient(135deg, #edf3ff, #f7faff);
+  box-shadow: 0 8px 22px rgba(43, 72, 122, 0.08);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: #101d34;
+  font: 800 14px Inter, 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.user-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 20px;
+  z-index: 20;
+}
+
+.logout-button,
+.grade-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  color: #fff;
+  font: 600 12px Inter, 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.logout-button {
+  min-width: 120px;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid #343a46;
+  background: #343a46;
+}
+
+.logout-button:hover,
+.grade-button:hover {
+  border-color: #171a20;
+  background: #171a20;
+}
+
+.logout-icon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  min-height: 0;
+  margin: 18px auto 0;
+  flex: 1 1 auto;
+}
+
+.student-card {
+  display: flex;
+  width: 100%;
+  min-height: 0;
+  padding: 0 24px 18px;
+  flex-direction: column;
+  border: 1px solid #e2e9f5;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(30, 41, 59, 0.12);
+}
+
+.heading {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0 18px;
+}
+
+.page-label {
+  position: relative;
+  margin: 0 0 30px;
+  color: #8191ac;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-label::after {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 48px;
+  height: 2px;
+  background: #216bff;
+  content: '';
+}
+
+.heading h1 {
+  margin: 0;
+  color: #101d34;
+  font-size: 36px;
+  font-weight: 750;
+  letter-spacing: -1.1px;
+}
+
+.grade-button {
+  height: 44px;
+  padding: 0 22px;
+  border: 1px solid #343a46;
+  background: linear-gradient(110deg, #4b515d, #252a33);
+  box-shadow: 0 6px 16px rgba(37, 42, 51, 0.16);
+}
+
+.grade-button::before {
+  content: '+';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.grade-button strong {
+  display: none;
+}
+
+.table-wrap {
+  height: clamp(450px, 60vh, 620px);
+  min-height: 0;
+  max-height: 620px;
+  overflow: auto;
+  flex: 1 1 auto;
+  border: 1px solid #e9edf5;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(25, 47, 85, 0.045);
+}
+
+table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+th,
+td {
+  padding: 0 16px;
+  border-right: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  height: 44px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-width: 92px;
+  overflow: hidden;
+  border-top: 2px solid #dbe7ff;
+  background: #f3f6fc;
+  color: #5b6b85;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: col-resize;
+  user-select: none;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+td {
+  height: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #64748b;
+}
+
+tbody tr:hover {
+  background: #f3f7ff;
+}
+
+.student-row {
+  cursor: pointer;
+}
+
+td strong {
+  color: #14213a;
+  font-weight: 650;
+}
+
+.id,
+.grade-cell {
+  color: #164bff;
+  font-weight: 700;
+}
+
+.subject-cell {
+  color: #526684;
+  font-weight: 600;
+}
+
+.grade-cell span,
+.subject-cell span {
+  color: #94a0b4;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.state {
+  padding: 16px;
+  border: 1px solid #e9edf5;
+  border-radius: 8px;
+  background: #fff;
+  color: #70809b;
+}
+
+.error {
+  color: #a21b1b;
+}
+
+.page-footer {
+  display: grid;
+  width: min(1200px, calc(100% - 48px));
+  flex: 0 0 auto;
+  grid-template-columns: 35% 35% 30%;
+  gap: 24px;
+  margin: 18px auto 0;
+  padding: 24px 20px;
+  border-top: 1px solid #e8eefa;
+  background: linear-gradient(180deg, #f4f7ff, #eef3ff);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-brand div,
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-brand strong,
+.footer-column strong {
+  color: #50617d;
+  font-size: 11px;
+}
+
+.footer-brand span:last-child,
+.footer-column a,
+.footer-column span {
+  color: #71819e;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #216bff;
+}
+
+@keyframes drift-cloud-left {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(150px, 18px, 0) scale(1.12); }
+}
+
+@keyframes drift-cloud-right {
+  from { transform: translate3d(0, 0, 0) scale(1.08); }
+  to { transform: translate3d(-170px, -22px, 0) scale(0.95); }
+}
+
+@media (max-width: 767px) {
+  .students-page,
+  .page-footer { width: calc(100% - 32px); }
+
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .heading h1 { font-size: 28px; }
+
+  .grade-button {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .page-footer {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host::before,
+  :host::after { animation: none; }
+}

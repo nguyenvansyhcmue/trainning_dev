@@ -1,0 +1,47 @@
+<main class="results-page">
+  <header class="results-header">
+    <a routerLink="/students">← Danh sách sinh viên</a>
+    <span>KẾT QUẢ HỌC TẬP</span>
+  </header>
+
+  @if (result$ | async; as result) {
+    @if (result.student; as student) {
+      <section class="results-card">
+        <p class="section-label">HỒ SƠ SINH VIÊN</p>
+        <h1>{{ student.fullName }}</h1>
+        <p class="student-meta">{{ student.studentId }} · {{ student.email }} · {{ student.major }}</p>
+
+        @if (result.grades.length) {
+          <div class="results-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Môn học</th>
+                  <th>Chuyên cần</th>
+                  <th>Giữa kỳ</th>
+                  <th>Cuối kỳ</th>
+                  <th>Điểm tổng kết</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (grade of result.grades; track grade.subject) {
+                  <tr>
+                    <td><strong>{{ grade.subject }}</strong></td>
+                    <td>{{ grade.attendance }}</td>
+                    <td>{{ grade.midterm }}</td>
+                    <td>{{ grade.final }}</td>
+                    <td class="final-score">{{ grade.finalScore }}</td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        } @else {
+          <p class="empty-state">Sinh viên chưa có kết quả học tập.</p>
+        }
+      </section>
+    } @else {
+      <p class="empty-state">Không tìm thấy sinh viên.</p>
+    }
+  }
+</main>

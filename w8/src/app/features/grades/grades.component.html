@@ -1,0 +1,38 @@
+<main class="grades-page">
+<header class="page-header">
+  <span class="page-label">NHẬP ĐIỂM SINH VIÊN</span>
+  <button class="logout-button" type="button" (click)="logout()">Đăng xuất</button>
+</header>
+
+<section class="heading">
+<h1>Nhập điểm sinh viên</h1>
+<span>Điền đầy đủ thông tin để lưu kết quả học tập.</span>
+</section>
+<form [formGroup]="gradeForm" (ngSubmit)="submit()">
+<label>Mã sinh viên<input formControlName="studentId" placeholder="SV001">
+</label>
+<label>Môn học<input formControlName="subject" placeholder="Nhập tên môn học">
+</label>
+<div class="score-grid">
+<label>Chuyên cần<input type="number" formControlName="attendance">
+</label>
+<label>Giữa kỳ<input type="number" formControlName="midterm">
+</label>
+<label>Cuối kỳ<input type="number" formControlName="final">
+</label>
+</div>
+<button class="save-button" type="submit" [disabled]="saving$ | async">
+  <span>{{ (saving$ | async) ? 'Đang lưu...' : 'Lưu kết quả' }}</span>
+  <strong>→</strong>
+</button>
+
+@if (saved$ | async) {
+  <p class="success">Grade record validated and ready to save.</p>
+}
+
+@if (error$ | async; as error) {
+  <p class="error">{{ error }}</p>
+}
+</form>
+</main>
+

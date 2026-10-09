@@ -1,0 +1,11 @@
+import * as XLSX from 'xlsx';
+import { mkdir, writeFile } from 'node:fs/promises';
+const sourcePath = 'C:/Users/nguye/Downloads/danh_sach_sinh_vien.xlsx';
+const outputPath = 'src/assets/students.json';
+const workbook = XLSX.readFile(sourcePath);
+const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+const rows = XLSX.utils.sheet_to_json(worksheet, { defval: null });
+const students = rows.map(row => ({ studentId: row['Mã SV'], fullName: row['Họ và Tên'], gender: row['Giới tính'], email: row.Email, major: row['Chuyên ngành'], academicYear: Number(row['Năm học']) }));
+await mkdir('src/assets', { recursive: true });
+await writeFile(outputPath, `${JSON.stringify(students, null, 2)}\n`, 'utf8');
+console.log(`Imported ${students.length} students to ${outputPath}`);

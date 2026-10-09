@@ -1,0 +1,48 @@
+﻿<div class="dialog-backdrop" (click)="closed.emit()">
+  <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="grade-title" (click)="$event.stopPropagation()">
+    <header class="dialog-header">
+      <div>
+        <h2 id="grade-title">Nhập điểm</h2>
+      </div>
+      <button class="close-button" type="button" aria-label="Đóng" (click)="closed.emit()">×</button>
+    </header>
+
+    <form [formGroup]="gradeForm" (ngSubmit)="submit()">
+      <div class="field-row">
+        <label>Mã sinh viên<input formControlName="studentId" placeholder="SV001"></label>
+        <label>Môn học
+          <select formControlName="subject">
+            <option value="">Chọn môn học</option>
+            @for (course of (courses$ | async); track course.courseCode) {
+              <option [value]="course.courseName">
+                {{ course.courseCode }} — {{ course.courseName }}
+              </option>
+            }
+          </select>
+        </label>
+      </div>
+
+      <div class="score-row">
+        <label>Chuyên cần<input type="number" formControlName="attendance"></label>
+        <label>Giữa kỳ<input type="number" formControlName="midterm"></label>
+        <label>Cuối kỳ<input type="number" formControlName="final"></label>
+      </div>
+
+      <p class="formula">Tổng kết = Chuyên cần × 10% + Giữa kỳ × 30% + Cuối kỳ × 60%</p>
+
+      @if (saved$ | async) {
+        <p class="success">Đã lưu kết quả điểm.</p>
+      }
+      @if (error$ | async; as error) {
+        <p class="error">{{ error }}</p>
+      }
+
+      <footer>
+        <button class="cancel-button" type="button" (click)="closed.emit()">Hủy</button>
+        <button class="save-button" type="submit" [disabled]="saving$ | async">
+          {{ (saving$ | async) ? 'Đang lưu...' : 'Lưu kết quả →' }}
+        </button>
+      </footer>
+    </form>
+  </section>
+</div>

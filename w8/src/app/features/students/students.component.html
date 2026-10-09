@@ -1,0 +1,110 @@
+﻿<main class="students-page">
+  <header class="page-header">
+    <button class="brand brand-menu-trigger" type="button" (click)="toggleUserMenu(); $event.stopPropagation()" aria-label="Mở menu tài khoản">
+      <img class="brand-logo" src="assets/student-logo.jpg" alt="Logo quản trị sinh viên">
+      <span>QUẢN TRỊ SINH VIÊN</span>
+    </button>
+    <div class="header-actions">
+      @if (isUserMenuOpen) {
+        <div class="user-menu">
+          <button class="logout-button" type="button" (click)="logout()">
+            <span>Đăng xuất</span>
+            <svg class="logout-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9" />
+              <path d="M11 12h9m0 0-3.5-3.5M20 12l-3.5 3.5" />
+            </svg>
+          </button>
+        </div>
+      }
+    </div>
+  </header>
+
+  <div class="content-container">
+    <section class="student-card">
+      <div class="heading">
+        <div>
+          <p class="page-label">QUẢN TRỊ SINH VIÊN</p>
+          <h1>Danh sách sinh viên</h1>
+        </div>
+        <button class="grade-button" type="button" (click)="openGradeDialog()">
+          <span>Nhập điểm</span>
+          <strong>→</strong>
+        </button>
+      </div>
+
+      @if (loading$ | async) {
+        <p class="state">Đang đọc dữ liệu sinh viên...</p>
+      }
+      @if (error$ | async; as error) {
+        <p class="state error">{{ error }}</p>
+      }
+
+      <section class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th (pointerdown)="startColumnResize($event)">ID</th>
+          <th (pointerdown)="startColumnResize($event)">Họ và tên</th>
+          <th (pointerdown)="startColumnResize($event)">Email</th>
+          <th (pointerdown)="startColumnResize($event)">Chuyên ngành</th>
+          <th (pointerdown)="startColumnResize($event)">Năm học</th>
+          <th (pointerdown)="startColumnResize($event)">Giới tính</th>
+          <th (pointerdown)="startColumnResize($event)">Môn học</th>
+          <th (pointerdown)="startColumnResize($event)">Điểm</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of (studentsWithGrades$ | async); track row.student.studentId) {
+          <tr [routerLink]="['/students', row.student.studentId, 'results']" class="student-row">
+            <td class="id">{{ row.student.studentId }}</td>
+            <td><strong>{{ row.student.fullName }}</strong></td>
+            <td>{{ row.student.email }}</td>
+            <td>{{ row.student.major }}</td>
+            <td>{{ row.student.academicYear }}</td>
+            <td>{{ row.student.gender }}</td>
+            <td class="subject-cell">
+              @if (row.grade; as grade) {
+                {{ grade.subject }}
+              } @else {
+                <span>Chưa có</span>
+              }
+            </td>
+            <td class="grade-cell">
+              @if (row.grade; as grade) {
+                {{ grade.finalScore }}
+              } @else {
+                <span>Chưa nhập</span>
+              }
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+      </section>
+    </section>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="footer-brand">
+    <img class="brand-logo" src="assets/student-logo.jpg" alt="Logo quản trị sinh viên">
+    <div>
+      <strong>QUẢN TRỊ SINH VIÊN</strong>
+      <span>Hệ thống quản lý thông tin sinh viên</span>
+    </div>
+  </div>
+  <div class="footer-column">
+    <strong>LIÊN KẾT</strong>
+    <a routerLink="/students">Danh sách sinh viên</a>
+    <a routerLink="/grades">Nhập điểm</a>
+  </div>
+  <div class="footer-column">
+    <strong>THÔNG TIN</strong>
+    <span>Hướng dẫn sử dụng</span>
+    <span>Liên hệ hỗ trợ</span>
+  </div>
+</footer>
+
+@if (isGradeDialogOpen) {
+  <app-grade-dialog (closed)="closeGradeDialog()" />
+}

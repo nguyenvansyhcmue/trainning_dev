@@ -1,0 +1,26 @@
+﻿<main class="auth-shell">
+  <form class="card" [formGroup]="form" (ngSubmit)="submit()">
+    <h1>Đăng nhập</h1>
+    <p>W8 Angular Client</p>
+    <label>
+      Tên đăng nhập
+      <input formControlName="username" autocomplete="username">
+    </label>
+    @if (form.controls.username.invalid && form.controls.username.touched) {
+      <small>Tên đăng nhập tối thiểu 3 ký tự.</small>
+    }
+    <label>
+      Mật khẩu
+      <input type="password" formControlName="password" autocomplete="current-password">
+    </label>
+    @if (form.controls.password.invalid && form.controls.password.touched) {
+      <small>Mật khẩu tối thiểu 6 ký tự.</small>
+    }
+    @if (error$ | async; as error) {
+      <div class="error">{{ error }}</div>
+    }
+    <button type="submit" [disabled]="(loading$ | async) === true">
+      {{ (loading$ | async) ? 'Đang đăng nhập...' : 'Đăng nhập' }}
+    </button>
+  </form>
+</main>

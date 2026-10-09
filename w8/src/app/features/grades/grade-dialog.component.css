@@ -1,0 +1,153 @@
+﻿.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #10111866;
+  backdrop-filter: blur(9px);
+  animation: fade-in .2s ease;
+}
+
+.dialog {
+  width: min(720px, 100%);
+  padding: 32px;
+  background: #f4f4f1;
+  color: #151515;
+  border: 1px solid #fff8;
+  border-radius: 18px;
+  box-shadow: 0 28px 80px #10111855;
+  animation: dialog-in .25s ease;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 8px;
+}
+
+.dialog h2 {
+  margin: 0;
+  font-size: 44px;
+  letter-spacing: -2.5px;
+  font-weight: 600;
+}
+
+.close-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  background: transparent;
+  color: #151515;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.field-row,
+.score-row {
+  display: grid;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.field-row {
+  grid-template-columns: 1fr 1fr;
+}
+
+.score-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  color: #151515;
+  outline: none;
+  font: inherit;
+  text-transform: none;
+}
+
+input:focus {
+  border-color: #1655d5;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.cancel-button,
+.save-button {
+  padding: 12px 17px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #555;
+}
+
+.save-button {
+  border: 1px solid #1655d5;
+  background: #1655d5;
+  color: #fff;
+}
+
+.save-button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.success,
+.error {
+  font-size: 13px;
+}
+
+.formula {
+  margin: 20px 0 0;
+  color: #777;
+  font-size: 11px;
+}
+
+.success { color: #16834d; }
+.error { color: #a21b1b; }
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(16px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 600px) {
+  .dialog { padding: 23px; }
+  .dialog h2 { font-size: 34px; }
+  .field-row,
+  .score-row { grid-template-columns: 1fr; gap: 18px; }
+}
